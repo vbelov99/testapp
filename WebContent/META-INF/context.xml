@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Context antiJARLocking="true" docBase="testApp" path="/testapp">
+  <Resource name="jdbc/test" 
+            auth="Container"
+            type="javax.sql.DataSource"
+            driverClassName="org.hsqldb.jdbc.JDBCDriver"
+            username="sa" 
+            password=""
+            url="jdbc:hsqldb:hsql://localhost"
+            maxTotal="100" 
+            maxIdle="30" 
+            maxWaitMillis="10000"/>
+</Context>
