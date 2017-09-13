@@ -65,15 +65,7 @@ public class SignInServlet extends HttpServlet {
 			aResponse.sendRedirect(aRequest.getContextPath() + "/welcome");
 		} else {
 			showError(aRequest, aResponse, "Не найден пользователь");
-			return;
-			// RequestDispatcher rd =
-			// getServletContext().getRequestDispatcher("/sign-in.html");
-			// PrintWriter out = response.getWriter();
-			// out.println("<font color=red>Either user name or password is
-			// wrong.</font>");
-			// rd.include(request, response);
 		}
-
 	}
 
 	/**

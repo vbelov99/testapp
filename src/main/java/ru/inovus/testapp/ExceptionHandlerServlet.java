@@ -53,7 +53,6 @@ public class ExceptionHandlerServlet extends HttpServlet {
 		Integer statusCode = (Integer) aRequest.getAttribute("javax.servlet.error.status_code");
 
 		aResponse.setContentType("text/html");
-		// aResponse.setCharacterEncoding(Constants.UTF8_ENCODING);
 		PrintWriter out = aResponse.getWriter();
 		out.println("<html>");
 		out.println("<head>");
@@ -69,7 +68,7 @@ public class ExceptionHandlerServlet extends HttpServlet {
 		}
 		out.println("</body>");
 		out.println("</html>");
-		// out.close();
+		out.close();
 	}
 
 }

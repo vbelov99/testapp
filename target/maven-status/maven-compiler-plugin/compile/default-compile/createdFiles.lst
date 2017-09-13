@@ -1,0 +1,11 @@
+ru\inovus\testapp\signup\SignUpServlet.class
+ru\inovus\testapp\repository\DataRepository.class
+ru\inovus\testapp\Constants.class
+ru\inovus\testapp\repository\DataSourceHolder.class
+ru\inovus\testapp\signin\SignInServlet.class
+ru\inovus\testapp\welcome\WelcomeServlet.class
+ru\inovus\testapp\model\User.class
+ru\inovus\testapp\DBInitializer.class
+ru\inovus\testapp\filters\EncodingFilter.class
+ru\inovus\testapp\exceptions\RepositoryException.class
+ru\inovus\testapp\ExceptionHandlerServlet.class

@@ -33,11 +33,8 @@ public class WelcomeServlet extends HttpServlet {
 		HttpSession session = aRequest.getSession(false);
 		if ((session != null) && (session.getAttribute(Constants.USR_ATTR) != null)) {
 			String name = (String) session.getAttribute(Constants.USR_ATTR);
-			// aResponse.setCharacterEncoding(Constants.UTF8_ENCODING);
 			printWelcome(aResponse.getWriter(), getWelcomeText(name));
 		} else {
-			// aResponse.sendRedirect(aRequest.getContextPath() +
-			// "/sign-in.jsp");
 			aRequest.getRequestDispatcher("/sign-in").forward(aRequest, aResponse);
 		}
 	}
@@ -82,24 +79,6 @@ public class WelcomeServlet extends HttpServlet {
 	 * @param aWelcomeText текст приветствия
 	 */
 	private void printWelcome(PrintWriter aWriter, String aWelcomeText) {
-		// StringBuilder sb = new StringBuilder();
-		// sb.append("<html>");
-		// sb.append("<head>");
-		// sb.append("<meta charset=\"UTF-8\">");
-		// sb.append("<title>Welcome</title>");
-		// sb.append("</head>");
-		// sb.append("<body>");
-		// sb.append("<h1>");
-		// sb.append(aWelcomeText);
-		// sb.append("</h1>");
-		// sb.append("<form action=\"sign-in\" method=\"get\">");
-		// sb.append("<input type=\"submit\" value=\"Выйти\"
-		// name=\"logout\"/>");
-		// sb.append("</form>");
-		// sb.append("</body>");
-		// sb.append("</html>");
-		// aWriter.println(sb.toString());
-
 		aWriter.println("<html>");
 		aWriter.println("<head>");
 		aWriter.println("<meta charset=\"UTF-8\">");
